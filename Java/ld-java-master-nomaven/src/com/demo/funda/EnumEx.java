@@ -21,6 +21,14 @@ public class EnumEx {
         int setting5 = acSetting1.getSetting();
         System.out.println(acSetting1+ "(" + setting5 + ")");
         System.out.println(setting5);
+
+        ACSetting2 acSetting2 = ACSetting2.DRY;
+        System.out.println(acSetting2.getSetting());
+
+        int setting7 = ACSettings.FAN;
+        System.out.println(setting7);
+        String setting8 = ACSettings.DRY;
+        System.out.println(setting8);
     }
 }
 
@@ -39,3 +47,18 @@ enum ACSetting1 {
     }
 }
 
+enum ACSetting2 {
+    FAN(true), DRY(false);
+    private boolean setting;
+    ACSetting2(boolean pSetting) {
+        setting = pSetting;
+    }
+    public boolean getSetting(){
+        return setting;
+    }
+}
+
+class ACSettings {
+    public static int FAN = 8;
+    public static String DRY = "D";
+}
