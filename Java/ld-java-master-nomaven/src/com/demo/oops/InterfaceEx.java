@@ -1,5 +1,6 @@
 package com.demo.oops;
 
+
 public class InterfaceEx {
     public static void main(String[] args) {
 //        Flyer flyerReference = new Flyer();
@@ -16,12 +17,12 @@ public class InterfaceEx {
 }
 
 // Flyer, Aeroplane, Bird
-abstract interface  Flyer {
-//    public abstract void fly();
+ interface  Flyer {
+    public abstract void fly();
 //    abstract void fly();
 //    public void fly();
 //  public and abstract by default
-    void fly();
+//    void fly();
 }
 interface Singer {
     void sing();
@@ -45,13 +46,18 @@ class Bird implements Flyer,Singer{
         System.out.println("Twee, twee, twee  & twee....");
     }
 }
-class Aeroplane implements Flyer {
+abstract class Aeroplane implements Flyer {
 
     @Override
     public void fly() {
         System.out.println("Combustion of fuel gets energy, and uses properller to fly");
 
     }
+    public void land() {
+
+    }
+
+    public abstract void fuel();
 }
 class Football implements Flyer {
 
