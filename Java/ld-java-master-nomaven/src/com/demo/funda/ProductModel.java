@@ -12,12 +12,9 @@ package com.demo.funda;
 
     @Override
     public String toString() {
-        return "ProductModel{" +
-                "productId='" + productId + '\'' +
-                ", productName='" + productName + '\'' +
-                ", price=" + price +
-                ", expired=" + expired +
-                '}';
+        return "Product Details : " +
+                "\nproductId='" + productId + '\'' +
+                "\n, productName='" + productName + '\'';
     }
 
     public void setPrice(float price) {
