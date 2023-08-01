@@ -1,4 +1,4 @@
-package com.demo.funda;
+package com.demo.inheritance;
 
 public class MultipleInheritanceEx {
     public static void main(String[] args) {
