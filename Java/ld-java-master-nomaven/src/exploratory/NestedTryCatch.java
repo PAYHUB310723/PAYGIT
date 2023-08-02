@@ -1,4 +1,4 @@
-package exceptions;
+package exploratory;
 
 public class NestedTryCatch {
 	public static void main(String[] args) {

@@ -4,6 +4,8 @@ package exceptions;
 // java.lang.ArithmeticException
 public class UnhandledException {
 	public static void main(String[] args) {
+		Object testObject = null;
+		testObject.toString();
 		System.out.println("Caller begin");
 		called();
 		System.out.println("Back to caller");

@@ -1,4 +1,4 @@
-package exceptions;
+package exploratory;
 
 import java.util.ArrayList;
 
