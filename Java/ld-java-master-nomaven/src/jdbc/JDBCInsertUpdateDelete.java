@@ -26,8 +26,8 @@ public static void main(String[] args) {
 //			System.out.println(noOfRows + " updated!");
 		
 //		int noOfRows = statement.executeUpdate("delete from user  where user_id = 102 ");
-		int noOfRows = statement.executeUpdate("delete from user");
-		System.out.println(noOfRows + " deleted!");
+//		int noOfRows = statement.executeUpdate("delete from user");
+//		System.out.println(noOfRows + " deleted!");
 				
 		
 	} catch (ClassNotFoundException e) {
