@@ -4,6 +4,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ExecutorServiceExample {
+//    The Executor services
+//    1. is an interface for executing async tasks.
+//    2. in the java.util.concurrent package
+//    3. providesmethods to manage termination of async tasks
 
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(5);

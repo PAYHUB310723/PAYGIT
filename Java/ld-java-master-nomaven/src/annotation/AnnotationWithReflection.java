@@ -9,6 +9,7 @@ public class AnnotationWithReflection {
 		//Class represents instances of a class or interface at runtime.
 		//getClass() - Returns the runtime class of this Object
 		Class dbFieldsClass = dbFieldsInstance.getClass();
+		System.out.println(dbFieldsClass);
 		//Returns a Field object that reflects the specified public member field of the class or interface
 		//represented by this Classobject. 
 		//The name parameter is a String specifying the simple name of the desired field. 

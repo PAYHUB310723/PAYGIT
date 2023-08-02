@@ -26,6 +26,7 @@ public class CustomAnnotationEx {
 }
 
 //applying the annotation
+
 class TestClass {
 	@MethodMetaDataAnnotation(developer = "Peter")
 	public void newTestMethod() {
@@ -37,3 +38,7 @@ class TestClass {
 		System.out.println("My Test Method!");
 	}
 }
+
+//@Retention is not applicable to type, which is a compilation error.
+//@Retention(RetentionPolicy.RUNTIME)
+//public class Type {}
