@@ -3,7 +3,6 @@ package generics;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.model.Product;
 
 public class WithGenericsTyped {
 	public static void main(String[] args) {
@@ -43,5 +42,9 @@ public class WithGenericsTyped {
 		for (String item : stringList) {
 			System.out.println(item);
 		}
+
+//		java 8 way
+//		Iterable
+		stringList.forEach(System.out::println);
 	}
 }

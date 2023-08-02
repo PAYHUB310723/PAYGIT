@@ -18,7 +18,7 @@ import java.util.TreeSet;
 public class SetEx {
 	public static void main(String[] args) {
 		begin();
-		treeSet();
+//		treeSet();
 	}
 
 	private static void begin() {

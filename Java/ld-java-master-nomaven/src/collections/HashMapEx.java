@@ -9,9 +9,9 @@ import java.util.TreeMap;
 
 public class HashMapEx {
 	public static void main(String[] args) {
-//		gettingStarted();
+		gettingStarted();
 //storeObjectsInMapPreJDK5();
-		contryCodesTreeMap();
+//		contryCodesTreeMap();
 	}
 
 	private static void gettingStarted() {
