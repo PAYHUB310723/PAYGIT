@@ -3,22 +3,29 @@ package exceptions;
 // Exception : abnormal situations that occur during the execution of a program
 // java.lang.ArithmeticException
 public class HandledException {
-	public static void main(String[] args) {
-		System.err.println("The calculator app");
-//		local variable
-		int num1 = 0, num2 = 200;
-		int result = 0;
-		try {
-		// exception occurs at thes line
-		result = num2 / num1;
+
+		public static void main(String[] args) {
+			System.out.println("Caller begin");
+			called();
+			System.out.println("Back to caller");
 		}
-		catch(ArithmeticException arithmeticException )
-		{
-			System.err.println("Cannot divide by zero");
+
+		private static void called() {
+			System.err.println("The calculator app");
+			int num1 = 0, num2 = 200;
+			int result = 0;
+			// exception occurs at thes line
+			try {
+				result = num2 / num1;
+				System.out.println("Will this execute?");
+			}
+			catch (ArithmeticException arithmeticException)
+			{
+				System.out.println("Divide by zero " + arithmeticException);
+			}
+			// program shuts down improperly
+			// code below does not get executed
+			System.err.println(result);
+			System.err.println("Shutting down calculator...");
 		}
-		// program shuts down improperly
-		// code below does not get executed
-		System.err.println(result);
-		System.err.println("Shutting down calculator...");
 	}
-}

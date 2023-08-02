@@ -3,8 +3,8 @@ package exceptions;
 public class TryCatchFinallyEx {
 	public static void main(String[] args) {
 //	tryCatch();
-//		tryFinally();
-		tryCatchFinally();
+		tryFinally();
+//		tryCatchFinally();
 	}
 
 	private static void tryCatch() {
@@ -25,7 +25,7 @@ public class TryCatchFinallyEx {
 
 	private static void tryFinally() {
 		int result = 0, num1 = 100, num2 = 10;
-		num2 = 0;
+//		num2 = 0;
 		try {
 			result = num1 / num2;
 		} finally {

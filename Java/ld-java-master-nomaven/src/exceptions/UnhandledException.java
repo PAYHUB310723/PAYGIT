@@ -4,6 +4,12 @@ package exceptions;
 // java.lang.ArithmeticException
 public class UnhandledException {
 	public static void main(String[] args) {
+		System.out.println("Caller begin");
+		called();
+		System.out.println("Back to caller");
+	}
+
+	private static void called() {
 		System.err.println("The calculator app");
 		int num1 = 0, num2 = 200;
 		// exception occurs at thes line
