@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
 		System.out.println("Driver Loaded!");
-		connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb", "postgres", "postgresql");
+		connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb1", "postgres", "postgresql");
 		System.out.println("Connection established!");
 		PreparedStatement  statement = connection.prepareStatement("insert into users values (?,?,?,?)");
 		System.out.println("Statement created");
