@@ -1,13 +1,11 @@
 package com.demo.oops;
-
-
 public class InterfaceEx {
     public static void main(String[] args) {
 //        Flyer flyerReference = new Flyer();
         Flyer flyer = new Bird();
         flyer.fly();
-        Flyer flyer1 = new Aeroplane();
-        flyer1.fly();
+//        Flyer flyer1 = new Aeroplane();
+//        flyer1.fly();
 //        flyer.sing();
 //        Bird bird = (Bird)flyer;
 //        bird.sing();
