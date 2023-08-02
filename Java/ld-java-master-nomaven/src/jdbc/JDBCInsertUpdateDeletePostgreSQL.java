@@ -7,13 +7,15 @@ import java.sql.Statement;
 
 public class JDBCInsertUpdateDeletePostgreSQL {
 public static void main(String[] args) {
+//	int i = 10;
+//	int result = i/0;
 	Connection connection =null;
 	//Load the driver class
 	try {
 //		Class.forName("com.mysql.jdbc.Driver");
-		Class.forName("com.mysql.cj.jdbc.Driver");
+//		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Driver Loaded!");
-		connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb", "postgres", "postgresql");
+		connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb1", "postgres", "postgresql");
 		System.out.println("Connection established!");
 		Statement  statement = connection.createStatement();
 		System.out.println("Statement created");
@@ -22,28 +24,29 @@ public static void main(String[] args) {
 //		System.out.println(noOfRows + " inserted!");
 		
 //		int noOfRows = statement.executeUpdate("update user set email = 'newmail@nm.com'");
-///		int noOfRows = statement.executeUpdate("update user set email = 'asf@nm.com' where id = 102");
+//    	int noOfRows = statement.executeUpdate("update users set email = 'NEW@new.com' where user_id = 102");
 //			System.out.println(noOfRows + " updated!");
 		
-//		int noOfRows = statement.executeUpdate("delete from user  where user_id = 102 ");
+		int noOfRows = statement.executeUpdate("delete from users  where user_id = 102 ");
 //		int noOfRows = statement.executeUpdate("delete from user");
-//		System.out.println(noOfRows + " deleted!");
+		System.out.println(noOfRows + " deleted!");
 				
 		
-	} catch (ClassNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+	}
+//	catch (ClassNotFoundException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+	catch (SQLException e) {
+		System.out.println("Not able to establish connection!");
 	}
 	finally {
 		try {
 			connection.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Unable to close the connection");
 		}
+		System.out.println("Connection closed successfully!");
 	}
 
 }
