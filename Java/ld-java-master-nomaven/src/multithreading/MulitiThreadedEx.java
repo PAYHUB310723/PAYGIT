@@ -3,7 +3,7 @@ package multithreading;
 public class MulitiThreadedEx {
     public static void main(String[] args) throws InterruptedException {
 //        PROCESS / ONE THREAD
-        Thread.currentThread().setName("RJ");
+        Thread.currentThread().setName("Brain Thread");
         System.out.println(Thread.currentThread().getName() + " started the competition!");
         ArlanThread arlanThread = new ArlanThread();
         JanThread janThread = new JanThread();
@@ -12,6 +12,8 @@ public class MulitiThreadedEx {
         arlanThread.join();
         janThread.join();
         System.out.println(Thread.currentThread().getName() + " announces the winner!");
+        arlanThread = new ArlanThread();
+        arlanThread.start();
     }
 }
 

@@ -3,7 +3,8 @@ package multithreading;
 public class SingleThreadedEx {
     public static void main(String[] args) {
 //        PROCESS / ONE THREAD
-        Thread.currentThread().setName("RJ");
+        System.out.println(Thread.currentThread().getName());
+        Thread.currentThread().setName("Brain Thread");
         System.out.println(Thread.currentThread().getName());
         Compute compute = new Compute();
         compute.odd();

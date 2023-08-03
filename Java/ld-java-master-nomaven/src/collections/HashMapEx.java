@@ -16,8 +16,10 @@ public class HashMapEx {
 
 	private static void gettingStarted() {
 		// check for null key and values
-		Map<String, Integer> countryCodesMap = new HashMap<String, Integer>();
+//		Map<String, Integer> countryCodesMap = new HashMap<String, Integer>();
+		Map<String, Integer> countryCodesMap = new TreeMap<String, Integer>();
 		System.err.println(countryCodesMap.isEmpty());
+		countryCodesMap.put("America", 00);
 		countryCodesMap.put("Singapore", 65);
 		countryCodesMap.put("India", 91);
 		countryCodesMap.put("Japan".toUpperCase(),81);

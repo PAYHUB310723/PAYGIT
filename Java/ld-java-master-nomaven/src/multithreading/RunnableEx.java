@@ -10,7 +10,10 @@ public class RunnableEx {
     }
 }
 
-class ThreadRunnable implements Runnable {
+class Dummy {
+
+}
+class ThreadRunnable extends  Dummy implements Runnable {
     public void run() {
         System.out.println("Child Thread!");
     }
