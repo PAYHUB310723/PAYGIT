@@ -98,7 +98,7 @@ class ElectricCar1 implements Vehicle1 {
 //    public int getHorsePower(int rpm, int torque) {
 //         return (rpm * torque) / 5232;
 //    }
-
+@Override
     public  void tax() {
         System.out.println("50 dollars / year!");
     }
