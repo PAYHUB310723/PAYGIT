@@ -1,8 +1,8 @@
-package new_features_java8_to_java17;
+package new_features_java8_to_java17.exploratory;
 
 public class RunnableLambda {
 	public static void main(String[] args) {
-// anonymousInstance();
+ anonymousInstance();
 
 //		Runnable runnable = () -> System.out.println("Welcome");
 

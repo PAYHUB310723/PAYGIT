@@ -1,4 +1,4 @@
-package new_features_java8_to_java17;
+package new_features_java8_to_java17.exploratory;
 
 
 // declared
