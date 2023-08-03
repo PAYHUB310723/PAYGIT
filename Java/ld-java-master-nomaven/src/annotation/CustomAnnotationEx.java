@@ -41,4 +41,4 @@ class TestClass {
 
 //@Retention is not applicable to type, which is a compilation error.
 //@Retention(RetentionPolicy.RUNTIME)
-//public class Type {}
+//public class CustomType {}
