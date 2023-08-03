@@ -2,18 +2,6 @@ package lang;
 
 public class StringBufferVsStringBuilder {
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) {
-        }
-        ;
-        long estimatedTime = System.nanoTime() - startTime;
-        System.out.println(estimatedTime);
-        long startTime1 = System.nanoTime();
-        for (int i = 0; i < 100000; i++) {
-        }
-        ;
-        long estimatedTime1 = System.nanoTime() - startTime1;
-        System.out.println(estimatedTime1);
         int N = 77777777;
         long t;
         // {{{{{

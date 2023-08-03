@@ -33,11 +33,13 @@ public class ObjectInputStreamEx {
 
 			objectInputStream.close();
 
-		} catch (EOFException eofException) {
+		}
+		catch (EOFException eofException) {
 			System.out.println(
 					"Completed processing the file!");
 //			System.out.println(eofException);
-		} catch (FileNotFoundException fileNotFoundException) {
+		}
+		catch (FileNotFoundException fileNotFoundException) {
 			System.out.println("Sir/Mam, please check if the file is in place....");
 			System.err.println(fileNotFoundException);
 		} catch (IOException ioException) {

@@ -19,8 +19,9 @@ public class ObjectOutputStreamEx {
 			// create model
 			ProductModel productModel = new ProductModel("P001", "Wings of Fire", 50.50f);
 			// write / serializing the object
-			Object productModelObject = productModel;
-			objectOutputStream.writeObject(productModelObject);
+//			Object productModelObject = productModel;
+//			objectOutputStream.writeObject(productModelObject);
+			objectOutputStream.writeObject(productModel);
 			
 			//XP
 //			int i = 100; //primitive

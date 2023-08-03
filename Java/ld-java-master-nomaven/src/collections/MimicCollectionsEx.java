@@ -15,6 +15,8 @@ interface CollectionM {
 	boolean isEmpty();
 	boolean remove(Object o);
 	int size();
+//	@Override
+//	int count();
 }
 
 interface ListM extends CollectionM {

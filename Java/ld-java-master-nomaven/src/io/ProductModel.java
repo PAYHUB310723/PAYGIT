@@ -6,6 +6,7 @@ import java.io.Serializable;
 //	
 //}
 //Classes encapsulate data members (fields, attributes) and methods (functions, routines)
+//Marker interface Serializable with no methods. They provide runtime with information.
 public class ProductModel extends Object implements Serializable{
 		// member fields
 		private String productId;
