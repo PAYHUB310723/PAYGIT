@@ -8,6 +8,7 @@ public class MulitiThreadedEx {
         ArlanThread arlanThread = new ArlanThread();
         JanThread janThread = new JanThread();
         arlanThread.start();
+        arlanThread.setPriority(Thread.MAX_PRIORITY);
         janThread.start();
         arlanThread.join();
         janThread.join();
