@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.demo</groupId>
-  <artifactId>ld0-mvn-setup-with-spring</artifactId>
+  <artifactId>ld1-xml-ioc</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>ld0-mvn-setup-with-spring</name>
+  <name>ld1-xml-ioc</name>
   <url>http://maven.apache.org</url>
 
   <properties>
