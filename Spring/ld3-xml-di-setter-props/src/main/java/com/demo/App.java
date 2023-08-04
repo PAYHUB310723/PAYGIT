@@ -3,20 +3,26 @@ package com.demo;
 import com.demo.model.Product;
 import com.demo.repository.ProductRepository;
 import com.demo.repository.ProductRepositoryImpl;
+import com.demo.service.ProductService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
 //        noSpring();
-        withSpringIOC();
+//        withSpringIOC();
+        //        Load the IOC container
+        System.out.println("Spring IOC Container");
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        Acess the bean
+        ProductService productService = (ProductService) classPathXmlApplicationContext.getBean("productService");
+        List<Product> productList =  productService.findAllFromService();
+        productList.forEach(product -> System.out.println(product));
+        System.out.println(productService.getLocation());
+        System.out.println(productService.getDomainName());
     }
 
     private static void withSpringIOC() {
@@ -25,13 +31,7 @@ public class App
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 //        Acess the bean
         ProductRepository productRepository = (ProductRepository) classPathXmlApplicationContext.getBean("productRepository");
-        System.out.println(productRepository);
-        List<Product> productList =  productRepository.findAll();
-        productList.forEach(product -> System.out.println(product));
-
-        productRepository = (ProductRepository) classPathXmlApplicationContext.getBean("productRepository");
-        System.out.println(productRepository);
-        productList =  productRepository.findAll();
+        List<Product> productList =  productRepository.findAllFromRepository();
         productList.forEach(product -> System.out.println(product));
     }
 
@@ -41,7 +41,7 @@ public class App
 
 
 //        short syntax
-        List<Product> productList =  productRepository.findAll();
+        List<Product> productList =  productRepository.findAllFromRepository();
         productList.forEach(product -> System.out.println(product));
 
 

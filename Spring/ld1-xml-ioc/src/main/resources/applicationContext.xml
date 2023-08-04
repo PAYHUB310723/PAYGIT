@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!--    ProductRepository productRepository = new ProductRepositoryImpl();-->
-    <bean id="productRepository" class="com.demo.repository.ProductRepositoryImpl"/>
+    <bean id="productRepository" class="com.demo.repository.ProductRepositoryImpl" scope="prototype"/>
 </beans>
