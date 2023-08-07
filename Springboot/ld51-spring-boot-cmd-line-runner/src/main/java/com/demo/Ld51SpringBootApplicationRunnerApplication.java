@@ -3,6 +3,7 @@ package com.demo;
 import com.demo.model.Product;
 import com.demo.repository.ProductRepository;
 import com.demo.repository.ProductRepositoryImpl;
+import com.demo.repository.ProductRepositoryNewImpl;
 import com.demo.service.ProductService;
 import com.demo.service.ProductServiceImpl;
 import org.springframework.boot.ApplicationArguments;
@@ -47,7 +48,7 @@ public class Ld51SpringBootApplicationRunnerApplication implements ApplicationRu
 
     @Bean
     public static ProductRepository getProductRepository(){
-        return new ProductRepositoryImpl();
+        return new ProductRepositoryNewImpl();
     }
     @Bean
     public static ProductService getProductService(){

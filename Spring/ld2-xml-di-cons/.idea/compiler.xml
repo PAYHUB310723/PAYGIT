@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ld2-xml-di-cons" />
-        <module name="ld51-spring-boot-cmd-line-runner" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ld51-spring-boot-cmd-line-runner" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
